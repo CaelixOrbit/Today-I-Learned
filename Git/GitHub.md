@@ -49,7 +49,8 @@
    ssh -T git@github.com # 这里的 git@github.com 不用替换为注册邮箱
    ```
 
-   > [!note]
+   > [!NOTE]
+   > 
    > 首次执行连接命令时，终端会触发安全警告并询问是否信任该主机的指纹 `Are you sure you want to continue connecting (yes/no/[fingerprint])?`。此时需手动输入 `yes` 并回车确认。
 
    **成功标识**：若终端返回如下包含 GitHub 用户名的信息，即代表 SSH 认证配置成功：
