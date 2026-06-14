@@ -1,0 +1,14 @@
+name: Trigger CaelixOrbit Site Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Cloudflare Pages deploy
+        run: curl -X POST "${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK }}"
